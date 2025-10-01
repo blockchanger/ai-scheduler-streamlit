@@ -1,0 +1,12 @@
+{
+  "startDateISO": "2025-10-01",
+  "resources": ["FE", "BE", "DS"],
+  "tasks": [
+    { "id": "A", "name": "Define Scope", "durationDays": 3, "dependsOn": [], "requiredResources": ["FE"] },
+    { "id": "B", "name": "Set Up Backend", "durationDays": 5, "dependsOn": ["A"], "requiredResources": ["BE"] },
+    { "id": "C", "name": "Frontend Scaffold", "durationDays": 4, "dependsOn": ["A"], "requiredResources": ["FE"] },
+    { "id": "D", "name": "Model Prototype", "durationDays": 4, "dependsOn": ["A"], "requiredResources": ["DS"] },
+    { "id": "E", "name": "Integrations", "durationDays": 5, "dependsOn": ["B", "C", "D"], "requiredResources": ["FE", "BE"] },
+    { "id": "F", "name": "Testing & UAT", "durationDays": 3, "dependsOn": ["E"], "requiredResources": ["FE", "BE", "DS"] }
+  ]
+}

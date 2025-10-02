@@ -116,7 +116,7 @@ with col_left:
     current_project = dict(
         startDateISO=start_date.isoformat(),
         resources=[r.strip() for r in resources_text.split(";") if r.strip()],
-        tasks=st.session_state.new_tasks
+        tasks=st.session_state.new_tasks,
         skipWeekends=bool(skip_weekends),
 
     )

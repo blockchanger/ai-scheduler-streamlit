@@ -77,6 +77,7 @@ with col_left:
     st.subheader("Project Input")
     start_date = st.date_input("Project Start Date", value=datetime.now().date())
     resources_text = st.text_input("Resources (semicolon-separated)", value="FE;BE;DS")
+    skip_weekends = st.checkbox("Skip weekends (no Sat/Sun)", value=True)
 
     st.markdown("**Add Task**")
     with st.form("add_task", clear_on_submit=True):
@@ -116,6 +117,8 @@ with col_left:
         startDateISO=start_date.isoformat(),
         resources=[r.strip() for r in resources_text.split(";") if r.strip()],
         tasks=st.session_state.new_tasks
+        skipWeekends=bool(skip_weekends),
+
     )
 
     st.text_area("Current Project (JSON)", value=json.dumps(current_project, indent=2), height=260)

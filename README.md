@@ -1,3 +1,11 @@
+
+[![Streamlit](https://img.shields.io/badge/Deploy-Streamlit-brightgreen?logo=streamlit)](https://pm-scheduler-rohith.streamlit.app)
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/blockchanger/ai-scheduler-streamlit.svg?style=flat)](https://github.com/blockchanger/ai-scheduler-streamlit/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/blockchanger/ai-scheduler-streamlit.svg)](https://github.com/blockchanger/ai-scheduler-streamlit/commits/main)
+[![Issues](https://img.shields.io/github/issues/blockchanger/ai-scheduler-streamlit.svg)](https://github.com/blockchanger/ai-scheduler-streamlit/issues)
+
 Compute the **Critical Path** and generate **resource-constrained schedules** from a simple task list. Visualize timelines as an interactive **Gantt chart**, import from **CSV/JSON**, and export the final schedule.
 
 **Live demo:** https://pm-scheduler-rohith.streamlit.app  
